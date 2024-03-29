@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bruno viado que da o rabo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+    
+    
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <i class="fi fi-rr-menu-burger "><img src="menu-hamburguer.svg" alt="" class="imgimg"></i>
+      <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-primary sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ajuda</a>
+            </li>
+          </ul>
+          <!-- Barra de Pesquisa -->
+          <form class="form-inline">
+            
+
+            <input id="pesqNav" class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-light my-2 my-sm-0 " id="pesqNav" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </nav>
+      
+      <!-- Conteúdo Principal -->
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+          <form class="form-signin text-center">
+            <h1 class="h3 mb-3 font-weight-normal">Faça login</h1>
+            <label for="inputEmail" class="sr-only">Endereço de email</label>
+            <input type="email" id="inputEmail" class="form-control mb-3" placeholder="Endereço de email" required autofocus>
+            <label for="inputPassword" class="sr-only">Senha</label>
+            <input type="password" id="inputPassword" class="form-control mb-3" placeholder="Senha" required>
+            <button class="btn btn-lg btn-primary btn-block" id="entrar" type="submit">Entrar</button>
+          </form>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <div class="bolStyle"></div>
+  <h1 class="titleBol">The New <strong class="hl">Hello World</strong></h1>
+  <!-- Bootstrap JavaScript e JQuery (necessário para o menu lateral funcionar) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Script para controlar o menu lateral
+    $(document).ready(function () {
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+      });
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
