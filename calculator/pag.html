@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-primary sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ajuda</a>
+            </li>
+          </ul>
+          <!-- Barra de Pesquisa -->
+          <form class="form-inline">
+            
+
+            <input id="pesqNav" class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-light my-2 my-sm-0 " id="pesqNav" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="row gallery">
+          <div class="col-md-3">
+            <div class="image blue"><img src="galeria-de-imagens.png" alt="" class="ift"></div>
+          </div>
+          <div class="col-md-3">
+            <div class="image light-blue"><img src="galeria-de-imagens.png" alt="" class="ift"></div>
+          </div>
+          <div class="col-md-3">
+            <div class="image dark-blue"><img src="galeria-de-imagens.png" alt="" class="ift"></div>
+          </div>
+          <div class="col-md-3">
+            <div class="image navy-blue"><img src="galeria-de-imagens.png" alt="" class="ift"></div>
+            
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="container">
+        <div class="row gallery">
+          <div class="col-md-3">
+            <div class="image blue"><img src="galeria-de-imagens.png" alt="" class="ift"></div>
+          </div>
+          <div class="col-md-3">
+            <div class="image light-blue"><img src="galeria-de-imagens.png" alt="" class="ift"></div>
+          </div>
+          <div class="col-md-3">
+            <div class="image dark-blue"><img src="galeria-de-imagens.png" alt="" class="ift"></div>
+          </div>
+          <div class="col-md-3">
+            <div class="image navy-blue"><img src="galeria-de-imagens.png" alt="" class="ift"></div>
+            
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      // Script para controlar o menu lateral
+      $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+          $('#sidebar').toggleClass('active');
+        });
+      });
+    </script>k
+</body>
+</html>

@@ -116,6 +116,7 @@ body {
     height: 800px;
     border-radius: 50%;
     border-right:5px solid #07498f;
+    filter: blur(1px);
 
   }
   .bolStyle:hover{
@@ -152,6 +153,7 @@ margin-left: 10px;
   position: relative;
   width: 100%;
   height: 100%;
+  margin-top: 50px;
 }
 
 /* Aplicando a animação */
@@ -167,6 +169,8 @@ margin-left: 10px;
   100%{
     transform: translate(0, 0);
     opacity: 1%;
+    filter: blur(5px); /* Aplica o efeito de desfoque */
+
 
   }
 }
@@ -175,4 +179,44 @@ margin-left: 10px;
 .circle {
   animation: moveCircle 9s linear infinite;
 }
+form{
+  
+    text-align: center;
+    line-height: 200px;
+    filter: blur(0px); /* Aplica o efeito de desfoque */
+  
+  
+}
+.image {
+  display: flex;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  align-items: center;
+  justify-content: center;
+}
 
+.image:hover {
+  transform: scale(1.05);
+}
+
+.blue {
+  background-color: #007bff; /* Blue Bootstrap color */
+}
+
+.light-blue {
+  background-color: #17a2b8; /* Light Blue Bootstrap color */
+}
+
+.dark-blue {
+  background-color: #0056b3; /* Dark Blue Bootstrap color */
+}
+
+.navy-blue {
+  background-color: #001f3f; /* Navy Blue Bootstrap color */
+}
+.ift{
+  width: 100px;
+}
